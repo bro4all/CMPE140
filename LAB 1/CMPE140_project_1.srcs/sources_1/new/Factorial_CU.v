@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module Factorial_CU(
-        input go, CLK,
+        input go, CLK, rst,
         input GT_One, GT_Twelve,
         output reg Sel, Load_Reg, Load_Cnt, OE, EN,
         output Done, Err
@@ -20,6 +20,12 @@ module Factorial_CU(
     S3 = 3'd3,
     S4 = 3'd4;
     
+    always @(posedge CLK, posedge rst)
+    begin
+        if(rst) CS <= S0;
+        else CS <= NS;
+    end
+    
     always @ (CS, go)
     begin
         case (CS)
@@ -37,8 +43,8 @@ module Factorial_CU(
         endcase
     end
     
-    always @ (posedge CLK)
-        CS = NS;
+    //always @ (posedge CLK)
+    //    CS = NS;
         
     always @ (CS)
     begin

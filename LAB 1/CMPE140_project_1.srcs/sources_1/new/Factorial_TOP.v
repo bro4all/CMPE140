@@ -2,7 +2,7 @@
 
 module Factorial_TOP(
         input [31:0] n,
-        input go, CLK,
+        input go, CLK, rst,
         output Done, Err, 
         output [31:0] out
     );
@@ -24,6 +24,7 @@ module Factorial_TOP(
     
     Factorial_CU CU (
         .go (go), 
+        .rst (rst),
         .Sel (Sel),
         .Load_Reg (Load_Reg),
         .Load_Cnt (Load_Cnt),

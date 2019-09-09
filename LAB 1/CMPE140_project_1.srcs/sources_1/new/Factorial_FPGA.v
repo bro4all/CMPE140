@@ -1,121 +1,119 @@
 `timescale 1ns / 1ps
 
-module factorial_FPGA#(parameter DATA_WIDTH=32)(
-	input GO, clk_IN, rst_IN, button_IN, sel_LEDmux,
+module Factorial_FPGA(
+	input go, clk100MHz, rst, button, bit_sel,
 	input [3:0] n,
 	
 	output wire [3:0] LEDSEL,
 	output wire [7:0] LEDOUT,
-	output DoneLED, ErrorLED
+	output Done, Err
 	);
 	
-	wire clk_internal, button_internal;
-	wire [DATA_WIDTH-1:0] product_F;
-	wire [3:0] out_BCD_0,out_BCD_1,out_BCD_2,out_BCD_3,out_BCD_4,out_BCD_5,out_BCD_6,out_BCD_7;
-	wire [7:0] out_SEG_0,out_SEG_1,out_SEG_2,out_SEG_3,out_SEG_4,out_SEG_5,out_SEG_6,out_SEG_7, out_LEDmux_0, out_LEDmux_1, out_LEDmux_2, out_LEDmux_3;
-	supply0[27:0] nZero;
-	wire [DATA_WIDTH-1:0]nModified = {nZero,n};
+	wire clk_5KHz, CLK;
+	wire [31:0] out;
+	wire [3:0] BCD_0, BCD_1, BCD_2, BCD_3, BCD_4, BCD_5, BCD_6, BCD_7;
+	wire [7:0] SEG_0, SEG_1, SEG_2, SEG_3, SEG_4, SEG_5, SEG_6, SEG_7, LEDmux_0, LEDmux_1, LEDmux_2, LEDmux_3;
+	wire [31:0]Padded_n = {28'b0,n};
 	
-	clk_gen CLK(
-    	.clk100MHz(clk_IN),
-    	.rst (rst_IN),
-    	.clk_5KHz (clk_internal),
-    	.clk_4sec()
+	Factorial_TOP Fact(
+    	.CLK (CLK),
+    	.rst (rst),
+    	.go (go),
+    	.n(Padded_n),
+    	.Done (Done),
+    	.Err (Err),
+    	.out (out)
 	);
 	
-	button_debouncer button(
-    	.clk (clk_internal),
-    	.button (button_IN),
-    	.debounced_button(button_internal)
+	clk_gen clk(
+    	.clk100MHz(clk100MHz),
+    	.rst (rst),
+    	.clk_5KHz (clk_5KHz)
 	);
 	
-	Factorial_TOP fact(
-    	.CLK (button_internal),
-    	//.RST (rst_IN),
-    	.go (GO),
-    	.n(nModified),
-    	.Done (DoneLED),
-    	.Err (ErrorLED),
-    	.out (product_F)
+	button_debouncer debouncer(
+    	.clk (clk_5KHz),
+    	.button (button),
+    	.debounced_button(CLK)
 	);
 	
 	bin2bcd32 BCD(
-    	.value (product_F),
-    	.dig0(out_BCD_0),
-    	.dig1(out_BCD_1),
-    	.dig2(out_BCD_2),
-    	.dig3(out_BCD_3),
-    	.dig4(out_BCD_4),
-    	.dig5(out_BCD_5),
-    	.dig6(out_BCD_6),
-    	.dig7(out_BCD_7)
+    	.value (out),
+    	.dig0(BCD_0),
+    	.dig1(BCD_1),
+    	.dig2(BCD_2),
+    	.dig3(BCD_3),
+    	.dig4(BCD_4),
+    	.dig5(BCD_5),
+    	.dig6(BCD_6),
+    	.dig7(BCD_7)
 	);
 	
 	hex_to_7seg SEG0(
-    	.HEX (out_BCD_0),
-    	.s(out_SEG_0)
+    	.HEX (BCD_0),
+    	.s(SEG_0)
 	);
 	
 	hex_to_7seg SEG1(
-    	.HEX (out_BCD_1),
-    	.s(out_SEG_1)
+    	.HEX (BCD_1),
+    	.s(SEG_1)
 	);
 	
 	hex_to_7seg SEG2(
-    	.HEX (out_BCD_2),
-    	.s(out_SEG_2)
+    	.HEX (BCD_2),
+    	.s(SEG_2)
 	);
 	
 	hex_to_7seg SEG3(
-    	.HEX (out_BCD_3),
-    	.s(out_SEG_3)
+    	.HEX (BCD_3),
+    	.s(SEG_3)
 	);
 	
 	hex_to_7seg SEG4(
-    	.HEX (out_BCD_4),
-    	.s(out_SEG_4)
+    	.HEX (BCD_4),
+    	.s(SEG_4)
 	);
 	
 	hex_to_7seg SEG5(
-    	.HEX (out_BCD_5),
-    	.s(out_SEG_5)
+    	.HEX (BCD_5),
+    	.s(SEG_5)
 	);
 	
 	hex_to_7seg SEG6(
-    	.HEX (out_BCD_6),
-    	.s(out_SEG_6)
+    	.HEX (BCD_6),
+    	.s(SEG_6)
 	);
 	
 	hex_to_7seg SEG7(
-    	.HEX (out_BCD_7),
-    	.s(out_SEG_7)
+    	.HEX (BCD_7),
+    	.s(SEG_7)
 	);
 	
 	led_mux LED (
-    	.clk        	(clk_internal),
-    	.rst        	(rst_IN),
-    	.LED0       	(out_LEDmux_0),
-    	.LED1       	(out_LEDmux_1),
-    	.LED2       	(out_LEDmux_2),
-    	.LED3       	(out_LEDmux_3),
+    	.clk        	(clk_5KHz),
+    	.rst        	(rst),
+    	.LED0       	(LEDmux_0),
+    	.LED1       	(LEDmux_1),
+    	.LED2       	(LEDmux_2),
+    	.LED3       	(LEDmux_3),
     	.LEDSEL     	(LEDSEL),
     	.LEDOUT     	(LEDOUT)
 	);
 	
 	MUX2LED LEDmux(
-    	.in0(out_SEG_0),
-    	.in1(out_SEG_1),
-    	.in2(out_SEG_2),
-    	.in3(out_SEG_3),
-    	.in4(out_SEG_4),
-    	.in5(out_SEG_5),
-    	.in6(out_SEG_6),
-    	.in7(out_SEG_7),
-    	.out0(out_LEDmux_0),
-    	.out1(out_LEDmux_1),
-    	.out2(out_LEDmux_2),
-    	.out3(out_LEDmux_3),
-    	.sel (sel_LEDmux)
+    	.in0(SEG_0),
+    	.in1(SEG_1),
+    	.in2(SEG_2),
+    	.in3(SEG_3),
+    	.in4(SEG_4),
+    	.in5(SEG_5),
+    	.in6(SEG_6),
+    	.in7(SEG_7),
+    	.out0(LEDmux_0),
+    	.out1(LEDmux_1),
+    	.out2(LEDmux_2),
+    	.out3(LEDmux_3),
+    	.sel (bit_sel)
 	);
 	
 	
