@@ -1,4 +1,3 @@
-//Module to multiply both inputs
 `timescale 1ns / 1ps
 
 module MUL(

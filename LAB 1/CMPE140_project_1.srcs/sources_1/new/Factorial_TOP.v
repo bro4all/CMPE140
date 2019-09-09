@@ -21,18 +21,18 @@ module Factorial_TOP(
         .GT_Twelve (GT_Twelve),
         .out (out)
     );
- 
-       Factorial_CU CU (
-           .go (go), 
-           .Sel (Sel),
-           .Load_Reg (Load_Reg),
-           .Load_Cnt (Load_Cnt),
-           .OE (OE),
-           .EN (EN),
-           .GT_One (GT_One),
-           .GT_Twelve (GT_Twelve),
-           .Done (Done),
-           .Err (Err),
-           .CLK (CLK)
-       );
-   endmodule
+    
+    Factorial_CU CU (
+        .go (go), 
+        .Sel (Sel),
+        .Load_Reg (Load_Reg),
+        .Load_Cnt (Load_Cnt),
+        .OE (OE),
+        .EN (EN),
+        .GT_One (GT_One),
+        .GT_Twelve (GT_Twelve),
+        .Done (Done),
+        .Err (Err),
+        .CLK (CLK)
+    );
+endmodule

@@ -27,6 +27,7 @@ module Factorial_CU(
             case ({go, GT_Twelve})
                 2'b11: {NS, CU_Err} <= {S0, 1'b1};
                 2'b10: {NS, CU_Err} <= {S1, 1'b0};
+                //2'b0?:  {NS, CU_Err} <= {S0,1'b0};
                 default: NS = S0;
             endcase
             S1: NS <= S2;

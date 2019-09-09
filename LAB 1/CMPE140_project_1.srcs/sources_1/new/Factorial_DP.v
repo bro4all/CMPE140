@@ -40,23 +40,22 @@ module Factorial_DP(
     
     CMP2 CMP2 (
         .A (n),
-       .B (4'b1100),
-         .GT_Twelve (GT_Twelve)
-     );
-     
-     CNT CNT (
-         .D (n),
-         .Load_cnt (Load_Cnt),
-         .EN (EN), 
-         .CLK (CLK),
-         .Q (CNT_out)
-     );
-     
-     MUX BUF (
-         .in0 (32'b0),
-         .in1 (REG_out),
-         .sel(OE),
-         .out (out)
-     );
- endmodule
-
+        .B (4'b1100),
+        .GT_Twelve (GT_Twelve)
+    );
+    
+    CNT CNT (
+        .D (n),
+        .Load_cnt (Load_Cnt),
+        .EN (EN), 
+        .CLK (CLK),
+        .Q (CNT_out)
+    );
+    
+    MUX BUF (
+        .in0 (32'b0),
+        .in1 (REG_out),
+        .sel(OE),
+        .out (out)
+    );
+endmodule
