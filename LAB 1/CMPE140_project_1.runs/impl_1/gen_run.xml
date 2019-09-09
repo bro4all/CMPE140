@@ -1,50 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1567995310">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1567999094">
+  <File Type="BITSTR-BMM" Name="Factorial_TOP_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Factorial_TOP_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Factorial_TOP_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="Factorial_TOP_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Factorial_TOP.tcl"/>
-  <File Type="BITSTR-BMM" Name="Factorial_TOP_bd.bmm"/>
+  <File Type="OPT-TIMING" Name="Factorial_TOP_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Factorial_TOP_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="Factorial_TOP_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Factorial_TOP_reports.tcl"/>
-  <File Type="OPT-DCP" Name="Factorial_TOP_opt.dcp"/>
   <File Type="OPT-DRC" Name="Factorial_TOP_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Factorial_TOP.hwdef"/>
   <File Type="PWROPT-DCP" Name="Factorial_TOP_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Factorial_TOP_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Factorial_TOP_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Factorial_TOP_placed.dcp"/>
   <File Type="PLACE-IO" Name="Factorial_TOP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Factorial_TOP_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Factorial_TOP_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Factorial_TOP_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Factorial_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Factorial_TOP_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Factorial_TOP_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="Factorial_TOP.bgn"/>
+  <File Type="PLACE-TIMING" Name="Factorial_TOP_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Factorial_TOP_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="Factorial_TOP.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Factorial_TOP_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Factorial_TOP_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Factorial_TOP_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Factorial_TOP.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Factorial_TOP_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Factorial_TOP_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Factorial_TOP_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Factorial_TOP_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Factorial_TOP_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Factorial_TOP_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Factorial_TOP_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Factorial_TOP.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Factorial_TOP_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Factorial_TOP_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="Factorial_TOP.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Factorial_TOP_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Factorial_TOP_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Factorial_TOP_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="Factorial_TOP.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Factorial_TOP_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="Factorial_TOP_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Factorial_TOP_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Factorial_TOP_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Factorial_TOP_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Factorial_TOP_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Factorial_TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Factorial_TOP_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Factorial_TOP_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Factorial_TOP_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Factorial_TOP_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Factorial_TOP_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Factorial_TOP_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Factorial_TOP_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Factorial_TOP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Factorial_TOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Factorial_TOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Factorial_TOP_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Factorial_TOP_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Factorial_TOP.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Factorial_TOP_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="Factorial_TOP.rbt"/>
   <File Type="BITSTR-NKY" Name="Factorial_TOP.nky"/>
   <File Type="BG-DRC" Name="Factorial_TOP.drc"/>
@@ -164,6 +183,14 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../../Desktop/CMPE140-master/Lab1/src/BUF.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Desktop/CMPE140-master/Lab1/src/factorial_FPGA.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Sep  8 19:15:41 2019
-# Process ID: 14092
-# Current directory: C:/Users/Omar/CMPE140_project_1/CMPE140_project_1.runs/impl_1
+# Start of session at: Sun Sep  8 20:18:46 2019
+# Process ID: 3008
+# Current directory: C:/Users/Omar/CMPE140/CMPE140/LAB 1/CMPE140_project_1.runs/impl_1
 # Command line: vivado.exe -log Factorial_TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Factorial_TOP.tcl -notrace
-# Log file: C:/Users/Omar/CMPE140_project_1/CMPE140_project_1.runs/impl_1/Factorial_TOP.vdi
-# Journal file: C:/Users/Omar/CMPE140_project_1/CMPE140_project_1.runs/impl_1\vivado.jou
+# Log file: C:/Users/Omar/CMPE140/CMPE140/LAB 1/CMPE140_project_1.runs/impl_1/Factorial_TOP.vdi
+# Journal file: C:/Users/Omar/CMPE140/CMPE140/LAB 1/CMPE140_project_1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Factorial_TOP.tcl -notrace

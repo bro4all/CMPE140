@@ -68,12 +68,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Omar/CMPE140_project_1/CMPE140_project_1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Omar/CMPE140_project_1/CMPE140_project_1.xpr [current_project]
-  set_property ip_output_repo C:/Users/Omar/CMPE140_project_1/CMPE140_project_1.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/Omar/CMPE140/CMPE140/LAB 1/CMPE140_project_1.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Omar/CMPE140/CMPE140/LAB 1/CMPE140_project_1.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Omar/CMPE140/CMPE140/LAB 1/CMPE140_project_1.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Omar/CMPE140_project_1/CMPE140_project_1.runs/synth_1/Factorial_TOP.dcp
-  read_xdc C:/Users/Omar/CMPE140_project_1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc
+  add_files -quiet {{C:/Users/Omar/CMPE140/CMPE140/LAB 1/CMPE140_project_1.runs/synth_1/Factorial_TOP.dcp}}
+  read_xdc {{C:/Users/Omar/CMPE140/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc}}
   link_design -top Factorial_TOP -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
