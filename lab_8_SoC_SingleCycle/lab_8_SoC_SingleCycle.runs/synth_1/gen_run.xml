@@ -1,118 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575247082">
-  <File Type="PA-TCL" Name="Factorial_FPGA.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Factorial_FPGA_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Factorial_FPGA_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Factorial_FPGA.vds"/>
-  <File Type="RDS-UTIL" Name="Factorial_FPGA_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Factorial_FPGA_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Factorial_FPGA.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Factorial_FPGA_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Factorial_FPGA_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575260888">
+  <File Type="PA-TCL" Name="SoC_singleCycle_FPGA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SoC_singleCycle_FPGA_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="SoC_singleCycle_FPGA_reports.tcl"/>
+  <File Type="RDS-RDS" Name="SoC_singleCycle_FPGA.vds"/>
+  <File Type="RDS-UTIL" Name="SoC_singleCycle_FPGA_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="SoC_singleCycle_FPGA_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="SoC_singleCycle_FPGA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SoC_singleCycle_FPGA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SoC_singleCycle_FPGA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.runs/impl_1/Factorial_TOP_routed.dcp">
+    <File Path="$PSRCDIR/sources_1/imports/new/SOC_AddressDecoder.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.runs/impl_1/Factorial_TOP_routed.dcp"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/CMP1.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/CMP1.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/SOC_AddressDecoder.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/CMP2.v">
+    <File Path="$PSRCDIR/sources_1/new/SoC_mux.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/CMP2.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/CNT.v">
+    <File Path="$PSRCDIR/sources_1/new/SoC_singleCycle_top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/CNT.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_CU.v">
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_CU.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v"/>
+        <Attr Name="ImportTime" Val="1529278294"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_DP.v">
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_DP.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v"/>
+        <Attr Name="ImportTime" Val="1573895830"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_TOP.v">
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_TOP.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v"/>
+        <Attr Name="ImportTime" Val="1573158142"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/MUL.v">
+    <File Path="$PSRCDIR/sources_1/imports/new/buff.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/MUL.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/MUX.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/MUX.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/MUX2LED.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/MUX2LED.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/REG.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/REG.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/bin2bcd32.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/bin2bcd32.v"/>
-        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/buff.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -136,10 +88,136 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/comp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/comp.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/control_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/control_unit.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v"/>
+        <Attr Name="ImportTime" Val="1573865355"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/counter.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v"/>
+        <Attr Name="ImportTime" Val="1573159443"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v"/>
+        <Attr Name="ImportTime" Val="1529288462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/dreg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/dreg.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fact_ad.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/fact_ad.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fact_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/fact_reg.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fact_res.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/fact_res.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/fact_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/fact_top.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/gpio_ad.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/gpio_ad.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/gpio_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/gpio_top.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v"/>
         <Attr Name="ImportTime" Val="1529896816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v"/>
+        <Attr Name="ImportTime" Val="1572899647"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -154,8 +232,225 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v"/>
+        <Attr Name="ImportTime" Val="1573088859"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/new/mf_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/new/mf_reg.v"/>
+        <Attr Name="ImportTime" Val="1573895830"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v"/>
+        <Attr Name="ImportTime" Val="1573865418"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/mux2.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mux4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/mux4.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/nfactorial.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/nfactorial.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/nfactorial_dp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/nfactorial_dp.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v"/>
+        <Attr Name="ImportTime" Val="1532850504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/register.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab 8.srcs/sources_1/new/register.v"/>
+        <Attr Name="ImportTime" Val="1575252504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v"/>
+        <Attr Name="ImportTime" Val="1529278266"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SoC_singleCycle_FPGA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.runs/impl_1/Factorial_TOP_routed.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.runs/impl_1/Factorial_TOP_routed.dcp"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/CMP1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/CMP1.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/CMP2.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/CMP2.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/CNT.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/CNT.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_CU.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_CU.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_DP.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_DP.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_TOP.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_TOP.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/MUL.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/MUL.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/MUX.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/MUX.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/MUX2LED.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/MUX2LED.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/REG.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/REG.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/bin2bcd32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/bin2bcd32.v"/>
+        <Attr Name="ImportTime" Val="1575246015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_FPGA.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../LAB 1/CMPE140_project_1.srcs/sources_1/new/Factorial_FPGA.v"/>
         <Attr Name="ImportTime" Val="1575246015"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -173,71 +468,11 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v"/>
-        <Attr Name="ImportTime" Val="1529278294"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v"/>
-        <Attr Name="ImportTime" Val="1573895830"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v"/>
-        <Attr Name="ImportTime" Val="1573158142"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v"/>
-        <Attr Name="ImportTime" Val="1573865355"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v"/>
-        <Attr Name="ImportTime" Val="1573159443"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sim_1/new/datapath_TB.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sim_1/new/datapath_TB.v"/>
         <Attr Name="ImportTime" Val="1572894128"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v"/>
-        <Attr Name="ImportTime" Val="1529288462"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -258,46 +493,6 @@
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.sim/sim_1/behav/xsim/glbl.v"/>
         <Attr Name="ImportTime" Val="1529022455"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v"/>
-        <Attr Name="ImportTime" Val="1572899647"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v"/>
-        <Attr Name="ImportTime" Val="1573088859"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/new/mf_reg.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/new/mf_reg.v"/>
-        <Attr Name="ImportTime" Val="1573895830"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v"/>
-        <Attr Name="ImportTime" Val="1573865418"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -328,26 +523,6 @@
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v"/>
         <Attr Name="ImportTime" Val="1529278340"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v"/>
-        <Attr Name="ImportTime" Val="1532850504"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v"/>
-        <Attr Name="ImportTime" Val="1529278266"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -419,8 +594,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Factorial_FPGA"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="SoC_singleCycle_FPGA"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -442,14 +616,12 @@
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

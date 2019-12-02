@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log Factorial_FPGA.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Factorial_FPGA.tcl -notrace
+EAStep vivado -log SoC_singleCycle_FPGA.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SoC_singleCycle_FPGA.tcl -notrace
 
 

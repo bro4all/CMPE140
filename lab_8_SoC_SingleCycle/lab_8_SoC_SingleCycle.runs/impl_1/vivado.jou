@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Dec  1 16:38:45 2019
-# Process ID: 23208
+# Start of session at: Sun Dec  1 20:28:46 2019
+# Process ID: 11308
 # Current directory: C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.runs/impl_1
-# Command line: vivado.exe -log Factorial_FPGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Factorial_FPGA.tcl -notrace
-# Log file: C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.runs/impl_1/Factorial_FPGA.vdi
+# Command line: vivado.exe -log SoC_singleCycle_FPGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SoC_singleCycle_FPGA.tcl -notrace
+# Log file: C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.runs/impl_1/SoC_singleCycle_FPGA.vdi
 # Journal file: C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source Factorial_FPGA.tcl -notrace
+source SoC_singleCycle_FPGA.tcl -notrace

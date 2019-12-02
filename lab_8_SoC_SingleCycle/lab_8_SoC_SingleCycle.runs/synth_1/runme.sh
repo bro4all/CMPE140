@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Factorial_FPGA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Factorial_FPGA.tcl
+EAStep vivado -log SoC_singleCycle_FPGA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SoC_singleCycle_FPGA.tcl

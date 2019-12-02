@@ -1,0 +1,997 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec  1 20:28:10 2019
+# Process ID: 8376
+# Current directory: C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.runs/synth_1
+# Command line: vivado.exe -log SoC_singleCycle_FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SoC_singleCycle_FPGA.tcl
+# Log file: C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.runs/synth_1/SoC_singleCycle_FPGA.vds
+# Journal file: C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SoC_singleCycle_FPGA.tcl -notrace
+Command: synth_design -top SoC_singleCycle_FPGA -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7620 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 334.563 ; gain = 101.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SoC_singleCycle_FPGA' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_singleCycle_top' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (2#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (3#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mf_reg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/new/mf_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mf_reg' (4#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/new/mf_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (5#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (5#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/mux2.v:1]
+WARNING: [Synth 8-689] width (5) of port connection 'a' does not match port width (32) of module 'mux2' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:134]
+WARNING: [Synth 8-689] width (5) of port connection 'y' does not match port width (32) of module 'mux2' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:136]
+WARNING: [Synth 8-689] width (5) of port connection 'a' does not match port width (32) of module 'mux2' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:140]
+WARNING: [Synth 8-689] width (5) of port connection 'y' does not match port width (32) of module 'mux2' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:142]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (6#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (7#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+WARNING: [Synth 8-567] referenced signal 'shamt' should be on the sensitivity list [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (9#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (10#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (11#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (12#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (13#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+WARNING: [Synth 8-350] instance 'mips' of module 'mips' requires 11 connections, but only 10 given [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_top.v:64]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/camer/OneDrive/Documents/CMPE_140/Lab7/mem.dat' is read successfully [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (14#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (15#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_mux' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_mux.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_mux.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_mux' (16#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_ad.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (17#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_ad.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_reg.v:1]
+	Parameter w bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg' (18#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized0' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_reg.v:1]
+	Parameter w bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized0' (18#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg__parameterized0' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/dreg.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg__parameterized0' (18#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'nfactorial' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial.v:1]
+INFO: [Synth 8-6157] synthesizing module 'nfactorial_dp' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial_dp.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/counter.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (19#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'comp' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/comp.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'comp' (20#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/comp.v:2]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/register.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (21#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'buff' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/buff.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'd' should be on the sensitivity list [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/buff.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'buff' (22#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/buff.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'nfactorial_dp' (23#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial_dp.v:2]
+WARNING: [Synth 8-689] width (32) of port connection 'q_cnt' does not match port width (4) of module 'nfactorial_dp' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial.v:34]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/control_unit.v:2]
+	Parameter IDLE bound to: 2'b00 
+	Parameter ST1 bound to: 2'b01 
+	Parameter ST2 bound to: 2'b10 
+	Parameter ERR bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/control_unit.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (24#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/control_unit.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'nfactorial' (25#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial.v:1]
+WARNING: [Synth 8-350] instance 'fact' of module 'nfactorial' requires 13 connections, but only 6 given [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_top.v:51]
+INFO: [Synth 8-6157] synthesizing module 'fact_res' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_res.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fact_res' (26#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_res.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized1' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_reg.v:1]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized1' (26#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/mux4.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (27#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/mux4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (28#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/gpio_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ad' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/gpio_ad.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/gpio_ad.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ad' (29#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/gpio_ad.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_reg__parameterized2' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_reg.v:1]
+	Parameter w bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fact_reg__parameterized2' (29#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/fact_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (30#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/gpio_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SoC_AddressDecoder' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/SOC_AddressDecoder.v:2]
+WARNING: [Synth 8-153] case item 32'b000000000000000000001000xxxxxxxx will never be executed [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/SOC_AddressDecoder.v:14]
+WARNING: [Synth 8-153] case item 32'b000000000000000000001001xxxxxxxx will never be executed [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/SOC_AddressDecoder.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_AddressDecoder' (31#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/SOC_AddressDecoder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_singleCycle_top' (32#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_top.v:23]
+WARNING: [Synth 8-350] instance 'system' of module 'SoC_singleCycle_top' requires 14 connections, but only 6 given [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:73]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (32#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_debouncer' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debouncer' (33#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (34#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (35#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/led_mux.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'LEDSEL' does not match port width (4) of module 'led_mux' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'SoC_singleCycle_FPGA' (36#1) [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:23]
+WARNING: [Synth 8-3917] design SoC_singleCycle_FPGA has port an[7] driven by constant 0
+WARNING: [Synth 8-3917] design SoC_singleCycle_FPGA has port an[6] driven by constant 0
+WARNING: [Synth 8-3917] design SoC_singleCycle_FPGA has port an[5] driven by constant 0
+WARNING: [Synth 8-3917] design SoC_singleCycle_FPGA has port an[4] driven by constant 0
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port clk
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port rst
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[31]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[30]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[29]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[28]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[27]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[26]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[25]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[24]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[23]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[22]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[21]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[20]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[19]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[18]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[17]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[16]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[15]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[14]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[13]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[12]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[11]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[10]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[9]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[8]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[7]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[6]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[5]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[4]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[3]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[2]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[1]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port a[0]
+WARNING: [Synth 8-3331] design SoC_AddressDecoder has unconnected port we
+WARNING: [Synth 8-3331] design buff has unconnected port oe
+WARNING: [Synth 8-3331] design nfactorial_dp has unconnected port done
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design SoC_singleCycle_FPGA has unconnected port clk50MHz
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 389.500 ; gain = 155.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin system:ra3[4] to constant 0 [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:73]
+WARNING: [Synth 8-3295] tying undriven pin system:ra3[3] to constant 0 [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:73]
+WARNING: [Synth 8-3295] tying undriven pin system:ra3[2] to constant 0 [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:73]
+WARNING: [Synth 8-3295] tying undriven pin system:ra3[1] to constant 0 [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:73]
+WARNING: [Synth 8-3295] tying undriven pin system:ra3[0] to constant 0 [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/new/SoC_singleCycle_FPGA.v:73]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 389.500 ; gain = 155.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 389.500 ; gain = 155.984
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk100MHz'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk100MHz'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk100MHz]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'go'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'bit_sel'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Err'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Done'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[0]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[1]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[2]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[3]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[4]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[5]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[6]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[7]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[0]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[1]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[2]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[3]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/LAB 1/CMPE140_project_1.srcs/constrs_1/new/factorial_FPGA.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SoC_singleCycle_FPGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SoC_singleCycle_FPGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'switches[0]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[1]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[2]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[3]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[4]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[5]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[6]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[7]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[8]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'we_dm'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[0]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[1]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[2]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[3]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[4]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[5]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[6]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDOUT[7]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[0]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[1]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[2]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDSEL[3]'. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/constrs_1/imports/CMPE140/processor_design/processor_design.srcs/constrs_1/imports/basys3_single_cycle_mips_validation/mips_fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SoC_singleCycle_FPGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SoC_singleCycle_FPGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 727.887 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 727.887 ; gain = 494.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 727.887 ; gain = 494.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 727.887 ; gain = 494.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_4sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:11]
+INFO: [Synth 8-5546] ROM "aluctrl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ctrl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial_dp.v:17]
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'control_unit'
+INFO: [Synth 8-5544] ROM "out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "debounced_button0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/new/mf_reg.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'y_mult_reg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'aluctrl_reg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'ctrl_reg' [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:19]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                     ST1 |                               01 |                               01
+                     ERR |                               10 |                               11
+                     ST2 |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'control_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 727.887 ; gain = 494.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   8 Input     32 Bit        Muxes := 1     
+	  23 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module dreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     11 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+Module auxdec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      5 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  23 Input     32 Bit        Muxes := 1     
+Module SoC_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module fact_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module fact_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module fact_reg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dreg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 4     
+Module fact_res 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module fact_reg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module gpio_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module fact_reg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module led_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:21]
+DSP Report: Generating DSP dp/alu/y_mult0, operation Mode is: A*B.
+DSP Report: operator dp/alu/y_mult0 is absorbed into DSP dp/alu/y_mult0.
+DSP Report: operator dp/alu/y_mult0 is absorbed into DSP dp/alu/y_mult0.
+DSP Report: Generating DSP dp/alu/y_mult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator dp/alu/y_mult0 is absorbed into DSP dp/alu/y_mult0.
+DSP Report: operator dp/alu/y_mult0 is absorbed into DSP dp/alu/y_mult0.
+DSP Report: Generating DSP dp/alu/y_mult0, operation Mode is: A*B.
+DSP Report: operator dp/alu/y_mult0 is absorbed into DSP dp/alu/y_mult0.
+DSP Report: operator dp/alu/y_mult0 is absorbed into DSP dp/alu/y_mult0.
+DSP Report: Generating DSP dp/alu/y_mult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator dp/alu/y_mult0 is absorbed into DSP dp/alu/y_mult0.
+DSP Report: operator dp/alu/y_mult0 is absorbed into DSP dp/alu/y_mult0.
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial_dp.v:17]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial_dp.v:17]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/new/nfactorial_dp.v:17]
+DSP Report: Generating DSP fact/DP/p, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP fact/DP/p.
+DSP Report: register A is absorbed into DSP fact/DP/p.
+DSP Report: operator fact/DP/p is absorbed into DSP fact/DP/p.
+DSP Report: operator fact/DP/p is absorbed into DSP fact/DP/p.
+DSP Report: Generating DSP fact/DP/p, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP fact/DP/p.
+DSP Report: register A is absorbed into DSP fact/DP/p.
+DSP Report: operator fact/DP/p is absorbed into DSP fact/DP/p.
+DSP Report: operator fact/DP/p is absorbed into DSP fact/DP/p.
+WARNING: [Synth 8-6014] Unused sequential element clk_gen/count1_reg was removed.  [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:12]
+WARNING: [Synth 8-6014] Unused sequential element clk_gen/clk_4sec_reg was removed.  [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/clk_gen.v:15]
+WARNING: [Synth 8-6014] Unused sequential element bd/history_reg was removed.  [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:14]
+WARNING: [Synth 8-6014] Unused sequential element bd/debounced_button_reg was removed.  [C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.srcs/sources_1/imports/CMPE140/processor_design/processor_design.srcs/sources_1/imports/basys3_single_cycle_mips_validation/button_debouncer.v:17]
+INFO: [Synth 8-5545] ROM "clk_gen/count2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_gen/clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design SoC_singleCycle_FPGA has port an[7] driven by constant 0
+WARNING: [Synth 8-3917] design SoC_singleCycle_FPGA has port an[6] driven by constant 0
+WARNING: [Synth 8-3917] design SoC_singleCycle_FPGA has port an[5] driven by constant 0
+WARNING: [Synth 8-3917] design SoC_singleCycle_FPGA has port an[4] driven by constant 0
+WARNING: [Synth 8-3331] design imem has unconnected port a[5]
+WARNING: [Synth 8-3331] design SoC_singleCycle_FPGA has unconnected port button
+WARNING: [Synth 8-3331] design SoC_singleCycle_FPGA has unconnected port clk50MHz
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/factorial/GoPulse/q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[30]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[31]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[28]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[29]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[26]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[27]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[24]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[25]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[10]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[11]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[8]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[9]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[6]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[7]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[16]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[17]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[14]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[15]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[12]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[13]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[22]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[23]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[20]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[21]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[18]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[19]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[5]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'system/factorial/n/Q_reg[2]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[2]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'system/factorial/n/Q_reg[3]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[3]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'system/factorial/Go/Q_reg[0]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'system/factorial/n/Q_reg[0]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'system/factorial/n/Q_reg[1]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[1]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO1_reg/Q_reg[0]' (FDCE) to 'system/gpio/gpO2_reg/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[20] )
+INFO: [Synth 8-3886] merging instance 'system/gpio/gpO2_reg/Q_reg[4]' (FDCE) to 'system/gpio/gpO1_reg/Q_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO2_reg/Q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\system/gpio/gpO1_reg/Q_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[31]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[30]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[29]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[28]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[27]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[26]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[25]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[24]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[23]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[22]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[21]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[20]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[19]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[18]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[17]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[16]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[15]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[14]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[13]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[12]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[11]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[10]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[9]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[8]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[7]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[6]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[5]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[4]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[3]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[2]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[1]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/HiReg/Q_reg[0]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[31]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[30]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[29]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[28]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[27]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[26]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[25]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[24]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[23]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[22]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[21]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[20]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[19]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[18]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[17]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[16]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[15]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[14]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[13]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[12]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[11]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[10]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[9]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[8]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[7]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[6]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[5]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[4]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[3]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[2]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[1]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/LoReg/Q_reg[0]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[31]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[30]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[29]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[28]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[27]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[26]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[25]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[24]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[23]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[22]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[21]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[20]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[19]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[18]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[17]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[16]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[15]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[14]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[13]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[12]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[11]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[10]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[9]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[8]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[7]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[6]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[5]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[4]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[3]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[2]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[1]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_reg[0]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_mult_reg[63]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_mult_reg[62]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_mult_reg[61]) is unused and will be removed from module SoC_singleCycle_FPGA.
+WARNING: [Synth 8-3332] Sequential element (system/mips/dp/alu/y_mult_reg[60]) is unused and will be removed from module SoC_singleCycle_FPGA.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 727.887 ; gain = 494.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mips        | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips        | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips        | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mips        | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fact_top    | A2*B2            | 18     | 5      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fact_top    | (PCIN>>17)+A2*B2 | 15     | 5      | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 727.887 ; gain = 494.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     2|
+|4     |LUT2   |     6|
+|5     |LUT3   |     2|
+|6     |LUT4   |     6|
+|7     |LUT5   |    12|
+|8     |FDRE   |    41|
+|9     |IBUF   |     2|
+|10    |OBUF   |    21|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+--------------------+------+
+|      |Instance      |Module              |Cells |
++------+--------------+--------------------+------+
+|1     |top           |                    |   101|
+|2     |  SoC_led_mux |led_mux             |     8|
+|3     |  clk_gen     |clk_gen             |    56|
+|4     |  system      |SoC_singleCycle_top |    13|
+|5     |    factorial |fact_top            |    13|
+|6     |      fact    |nfactorial          |    13|
+|7     |        CU    |control_unit        |     2|
+|8     |        DP    |nfactorial_dp       |    11|
+|9     |          CNT |counter             |    11|
++------+--------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 737.883 ; gain = 504.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 320 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 737.883 ; gain = 165.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 737.883 ; gain = 504.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 226 Warnings, 40 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 739.352 ; gain = 518.652
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Programming/CMPE140/lab_8_SoC_SingleCycle/lab_8_SoC_SingleCycle.runs/synth_1/SoC_singleCycle_FPGA.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SoC_singleCycle_FPGA_utilization_synth.rpt -pb SoC_singleCycle_FPGA_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 739.352 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  1 20:28:39 2019...

@@ -1,7 +1,7 @@
 module fact_top(
-     input wire Clk, Rst,
+     input wire clk, rst,
      input wire [1:0] A,
-     input wire WE,
+     input wire we,
      input wire [3:0] WD,
      output wire [31:0] RD
      );
@@ -18,23 +18,23 @@ module fact_top(
 
      fact_ad fact_ad (
          .A (A),
-         .WE (WE),
+         .WE (we),
          .WE1 (WE1),
          .WE2 (WE2),
          .RdSel (RdSel)
      );
     
      fact_reg #(4) n (
-         .Clk (Clk),
-         .Rst (Rst),
+         .Clk (clk),
+         .Rst (rst),
          .D (WD),
          .Load_Reg (WE1),
          .Q (n_out)
      );
     
      fact_reg #(1) Go (
-         .Clk (Clk),
-         .Rst (Rst),
+         .Clk (clk),
+         .Rst (rst),
          .D (WD[0]),
          .Load_Reg (WE2),
          .Q (go_out)
@@ -42,14 +42,14 @@ module fact_top(
     
     
      dreg #(1) GoPulse (
-         .clk (Clk),
-         .rst (Rst),
+         .clk (clk),
+         .rst (rst),
          .d (GoPulseCmb),
          .q (GoPulse_out)
      );
     
      nfactorial fact (
-         .clk (Clk),
+         .clk (clk),
          .go (GoPulse_out),
          .n (n_out),
          .done (Done),
@@ -58,24 +58,24 @@ module fact_top(
      );
     
      fact_res resdone (
-         .Clk (Clk),
-         .Rst (Rst),
+         .Clk (clk),
+         .Rst (rst),
          .S (Done),
          .R (GoPulseCmb),
          .Q (ResDone)
      );
     
      fact_res reserr (
-         .Clk (Clk),
-         .Rst (Rst),
+         .Clk (clk),
+         .Rst (rst),
          .S (Err),
          .R (GoPulseCmb),
          .Q (ResErr)
      );
     
      fact_reg #(32) result (
-         .Clk (Clk),
-         .Rst (Rst),
+         .Clk (clk),
+         .Rst (rst),
          .D (nf),
          .Load_Reg (Done),
          .Q (Result)

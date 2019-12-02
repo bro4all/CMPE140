@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log Factorial_FPGA.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Factorial_FPGA.tcl -notrace" );
+         "-log SoC_singleCycle_FPGA.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SoC_singleCycle_FPGA.tcl -notrace" );
 
 
 

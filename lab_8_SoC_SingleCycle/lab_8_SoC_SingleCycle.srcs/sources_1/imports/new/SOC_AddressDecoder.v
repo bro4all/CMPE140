@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
-module SOC_AddressDecoder(
-    input clock,
-    input reset,
+module SoC_AddressDecoder(
+    input clk,
+    input rst,
     input [31:0] a,
     input we, 
     output reg wem,
