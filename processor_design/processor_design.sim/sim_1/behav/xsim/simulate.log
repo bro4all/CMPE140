@@ -1,0 +1,4 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+$finish called at time : 550 ns : File "C:/Users/camer/OneDrive/Documents/CMPE_140/Lab5/processor_design/processor_design.srcs/sim_1/imports/testbench/tb_mips_top.v" Line 45
+$finish called at time : 550 ns : File "C:/Users/camer/OneDrive/Documents/CMPE_140/Lab5/processor_design/processor_design.srcs/sim_1/imports/testbench/tb_mips_top.v" Line 45

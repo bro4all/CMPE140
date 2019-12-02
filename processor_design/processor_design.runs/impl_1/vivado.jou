@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov 18 11:34:45 2019
+# Process ID: 16720
+# Current directory: C:/Users/camer/OneDrive/Documents/CMPE_140/Lab5/processor_design/processor_design.runs/impl_1
+# Command line: vivado.exe -log mips_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mips_fpga.tcl -notrace
+# Log file: C:/Users/camer/OneDrive/Documents/CMPE_140/Lab5/processor_design/processor_design.runs/impl_1/mips_fpga.vdi
+# Journal file: C:/Users/camer/OneDrive/Documents/CMPE_140/Lab5/processor_design/processor_design.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mips_fpga.tcl -notrace
